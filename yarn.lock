@@ -29,6 +29,12 @@
     "@nuxtjs/meta" "^1.5.3"
     "@nuxtjs/workbox" "^1.2.2"
 
+"@nuxtjs/vuetify@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/vuetify/-/vuetify-0.1.1.tgz#07e3b70ac44b8f4de36e0d8009d351457e174ac8"
+  dependencies:
+    vuetify "^0.16.1"
+
 "@nuxtjs/webpackmonitor@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/webpackmonitor/-/webpackmonitor-0.0.3.tgz#c3f9098c9a79b9108b637d19327f344dfe57e8ca"
@@ -6986,6 +6992,10 @@ vue-template-es2015-compiler@^1.6.0:
 vue@~2.4.2:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.4.4.tgz#ea9550b96a71465fd2b8b17b61673b3561861789"
+
+vuetify@^0.16.1:
+  version "0.16.9"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.16.9.tgz#fd61f219e4a40d7afe5e24a803df5658a40b38e4"
 
 vuex@^2.4.0:
   version "2.5.0"
