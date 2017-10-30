@@ -1,7 +1,7 @@
 <template lang="pug">
   section.hero.is-fullheight.is-default.is-bold
     .hero-head
-      nav.navbar
+      nav.navbar.is-transparent
         .container
           .navbar-brand
             a.navbar-item(href="../")

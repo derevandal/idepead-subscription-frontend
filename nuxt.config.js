@@ -16,28 +16,30 @@ module.exports = {
         config.devtool = 'eval-source-map'
       }
       if (dev && isClient) {
-        config.module.rules.push({
-          test: /\.(gif|png|jpe?g|svg)$/i,
-          use: [
-            'file-loader',
-            {
-              loader: 'image-webpack-loader',
-              options: {
-                bypassOnDebug: true,
-                webp: {
-                  quality: 75
+        config.module.rules.push(
+          {
+            test: /\.(gif|png|jpe?g|svg)$/i,
+            use: [
+              'file-loader',
+              {
+                loader: 'image-webpack-loader',
+                options: {
+                  bypassOnDebug: true,
+                  webp: {
+                    quality: 75
+                  }
                 }
               }
-            }
-          ]
-        },
+            ]
+          },
           {
             enforce: 'pre',
             test: /\.(js|vue)$/,
             loader: 'eslint-loader',
             exclude: /(node_modules)/
-          })
-      }
+          }
+      ) 
+}
       return config
     }
   },
@@ -53,19 +55,19 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { lang: 'pt-br' },
-      { viewport: 'width=device-width, initial-scale=1, minimal-ui' }
+      { viewport: 'width=device-width, initial-scale=1' }
     ],
     script: [
       { src: 'https://www.google.com/recaptcha/api.js?render=explicit', async: true, defer: true, body: true }
     ]
   },
 
-  meta: {
-    title: '',
-    'og:title': '',
-    description: '',
-    'og:description': ''
-  },
+  // meta: {
+  //   title: '',
+  //   'og:title': '',
+  //   description: '',
+  //   'og:description': ''
+  // },
 
   /*
   ** Customize the progress-bar color
@@ -110,7 +112,7 @@ module.exports = {
   ** Modules
   */
   modules: [
-    ['@nuxtjs/pwa', { meta: false }],
+    ['@nuxtjs/pwa'],
     '@nuxtjs/webpackmonitor',
     '@nuxtjs/bulma'
   ],

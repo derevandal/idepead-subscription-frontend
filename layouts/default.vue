@@ -35,11 +35,16 @@ export default {
 
 <style lang="scss">
 @import "~normalize-scss/sass/normalize/_import-now";
+
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
 // Import Bulma and Buefy styles
 
 @import "~bulma";
-// @import "~buefy/src/scss/buefy";
+@import "~buefy/src/scss/buefy";
+
+@import "~bulmaswatch/cosmo/_variables.scss";
+@import "~bulmaswatch/cosmo/_overrides.scss";
+
 </style>
