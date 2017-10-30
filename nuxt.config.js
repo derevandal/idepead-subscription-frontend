@@ -29,7 +29,30 @@ module.exports = {
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
   */
-  head: {},
+  head: {
+    htmlAttrs: {
+      lang: 'pt-br'
+    },
+    titleTemplate: '%s - IDEPead',
+    meta: [
+      { charset: 'utf-8' },
+      { lang: 'pt-br' }
+    ],
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700' }
+    ],
+    script: [
+      { src: 'https://www.google.com/recaptcha/api.js?render=explicit', async: true, defer: true }
+    ]
+  },
+
+  meta: {
+    title: '',
+    'og:title': '',
+    description: '',
+    'og:description': ''
+  },
+
   /*
   ** Customize the progress-bar color
   */
@@ -38,6 +61,8 @@ module.exports = {
   ** Customize app manifest
   */
   manifest: {
+    name: 'Inscreva-se',
+    lang: 'pt-br',
     theme_color: '#3B8070'
   },
   /*
@@ -68,7 +93,7 @@ module.exports = {
   //   }
   // },
   modules: [
-    '@nuxtjs/pwa',
+    ['@nuxtjs/pwa', { meta: false }],
     '@nuxtjs/webpackmonitor',
     '@nuxtjs/vuetify'
   ]
