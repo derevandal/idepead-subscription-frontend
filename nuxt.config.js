@@ -4,22 +4,24 @@ module.exports = {
   */
   build: {
     analyze: true,
-    extend (config, { isClient }) {
-      config.module.rules.push({
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true,
-              webp: {
-                quality: 75
+    extend (config, { isClient, dev }) {
+      if (dev && isClient) {
+        config.module.rules.push({
+          test: /\.(gif|png|jpe?g|svg)$/i,
+          use: [
+            'file-loader',
+            {
+              loader: 'image-webpack-loader',
+              options: {
+                bypassOnDebug: true,
+                webp: {
+                  quality: 75
+                }
               }
             }
-          }
-        ]
-      })
+          ]
+        })
+      }
       return config
     }
   },
