@@ -42,10 +42,4 @@ export default {
 
 @import "~bulma";
 // @import "~buefy/src/scss/buefy";
-
-html,
-body {
-  min-height: 100vh;
-}
-
 </style>

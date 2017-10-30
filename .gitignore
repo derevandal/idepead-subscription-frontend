@@ -20,6 +20,6 @@ dist
 # Generated files
 static/manifest*.json
 static/sw.js
-static/workbox-sw*.js
+static/workbox-sw*.*
 
 .monitor

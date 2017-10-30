@@ -3,7 +3,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    analyze: true,
+    analyze: false,
+    extractCSS: true,
     postcss: {
       plugins: {
         'postcss-custom-properties': false
