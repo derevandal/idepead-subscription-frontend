@@ -4,6 +4,7 @@ module.exports = {
   */
   build: {
     analyze: false,
+    publicPath: 'https://derevandal.github.io/idepead-subscription-frontend/_nuxt/',
     extractCSS: true,
     postcss: {
       plugins: {
