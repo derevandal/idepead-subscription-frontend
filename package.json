@@ -7,6 +7,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "latest",
     "@nuxtjs/webpackmonitor": "^0.0.3",
+    "image-webpack-loader": "^3.4.2",
     "nuxt": "latest"
   },
   "scripts": {

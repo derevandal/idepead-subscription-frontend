@@ -3,7 +3,25 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    analyze: true
+    analyze: true,
+    extend (config, { isClient }) {
+      config.module.rules.push({
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+              webp: {
+                quality: 75
+              }
+            }
+          }
+        ]
+      })
+      return config
+    }
   },
   /*
   ** Headers
