@@ -5,6 +5,9 @@ module.exports = {
   build: {
     analyze: true,
     extend (config, { isClient, dev }) {
+      if (isClient) {
+        config.devtool = 'eval-source-map'
+      }
       if (dev && isClient) {
         config.module.rules.push({
           test: /\.(gif|png|jpe?g|svg)$/i,
