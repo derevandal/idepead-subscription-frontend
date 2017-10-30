@@ -5,6 +5,7 @@
   "author": "André Van Dal <deregudegu@gmail.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/bulma": "^1.0.3",
     "@nuxtjs/pwa": "latest",
     "@nuxtjs/webpackmonitor": "^0.0.3",
     "image-webpack-loader": "^3.4.2",
