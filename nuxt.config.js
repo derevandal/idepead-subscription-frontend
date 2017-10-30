@@ -4,7 +4,7 @@ module.exports = {
   */
   build: {
     analyze: false,
-    publicPath: 'https://derevandal.github.io/idepead-subscription-frontend/_nuxt/',
+    publicPath: 'https://derevandal.github.io/idepead-subscription-frontend/',
     extractCSS: true,
     postcss: {
       plugins: {
@@ -38,8 +38,8 @@ module.exports = {
             loader: 'eslint-loader',
             exclude: /(node_modules)/
           }
-      ) 
-}
+      )
+      }
       return config
     }
   },
