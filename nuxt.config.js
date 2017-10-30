@@ -50,10 +50,8 @@ module.exports = {
     titleTemplate: '%s - IDEPead',
     meta: [
       { charset: 'utf-8' },
-      { lang: 'pt-br' }
-    ],
-    link: [
-      { rel: 'stylesheet', href: 'https://unpkg.com/bulmaswatch/cosmo/bulmaswatch.min.css' }
+      { lang: 'pt-br' },
+      { viewport: 'width=device-width, initial-scale=1, minimal-ui' }
     ],
     script: [
       { src: 'https://www.google.com/recaptcha/api.js?render=explicit', async: true, defer: true, body: true }

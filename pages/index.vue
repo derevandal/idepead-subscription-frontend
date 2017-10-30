@@ -1,30 +1,53 @@
-<template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        NUXT
-      </h1>
-      <h2 class="subtitle">
-        PWA Vue.js Application
-      </h2>
-      <div :class="['network',online ? 'online' : 'offline']">
-        <div class="circle"></div>
-        {{ online ? 'online' : 'offline' }}
-      </div>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green" rel="noopener">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+  section.hero.is-fullheight.is-default.is-bold
+    .hero-head
+      nav.navbar
+        .container
+          .navbar-brand
+            a.navbar-item(href="../")
+              img(src="https://bulma.io/images/bulma-logo.png" alt="Logo")
+            span.navbar-burger.burger(data-target="navbarMenu")
+              span
+              span
+              span
+          #navbarMenu.navbar-menu
+            .navbar-end
+              a.navbar-item.is-active
+                | Home
+              a.navbar-item
+                | Examples
+              a.navbar-item
+                | Features
+              a.navbar-item
+                | Team
+              a.navbar-item
+                | Help
+    .hero-body
+      .container.has-text-centered
+        .columns.is-vcentered
+          .column.is-5
+            figure.image.is-4by3
+              img(src="http://placehold.it/800x600" alt="Description")
+          .column.is-6.is-offset-1
+            h1.title.is-2
+              | Superhero Scaffolding
+            h2.subtitle.is-4
+              | Let this cover page describe a product or service.
+            br
+            p.has-text-centered
+              a.button.is-medium.is-info.is-outlined
+                | Learn more
+    .hero-foot
+      .container
+        .tabs.is-centered
+          ul
+            li
+              a And this at the bottom
+
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
-
   export default {
-    components: {Logo},
     data () {
       return {
         online: true
@@ -52,50 +75,4 @@
 </script>
 
 <style>
-  .container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title {
-    font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: #35495e;
-    letter-spacing: 1px;
-  }
-
-  .subtitle {
-    font-weight: 300;
-    font-size: 42px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
-  }
-
-  .links {
-    padding-top: 15px;
-  }
-
-  .network {
-    font-weight: 400;
-    font-size: 1rem;
-  }
-
-  .network .circle {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background: green;
-    padding: .1rem .5rem;
-    border-radius: 1rem;
-  }
-
-  .network.offline .circle {
-    background: red;
-  }
 </style>

@@ -1,17 +1,11 @@
 <template>
   <div>
-    <app-navbar/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import appNavbar from '~/components/app/navbar.vue'
-
 export default {
-  components: {
-    appNavbar
-  },
   head () {
     return {
       title: this.$store.getters.getSeoTitle,
@@ -31,7 +25,7 @@ export default {
         { hid: 'og:type', n: 'og:type', c: 'website' },
         { hid: 'og:url', n: 'og:url', c: this.$store.getters.getSeoDomain },
         { hid: 'og:description', n: 'og:description', c: this.$store.getters.getSeoDescription },
-        { hid: 'og:site_name', n: 'og:site_name', c: `${this.$store.getters.getSeoTitle} - IDEPead`},
+        { hid: 'og:site_name', n: 'og:site_name', c: `${this.$store.getters.getSeoTitle} - IDEPead` },
         { hid: 'fb:admins', n: 'fb:admins', c: '264917726946702' }
       ]
     }
@@ -39,5 +33,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~normalize-scss/sass/normalize/_import-now";
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Import Bulma and Buefy styles
+
+@import "~bulma";
+// @import "~buefy/src/scss/buefy";
+
+html,
+body {
+  min-height: 100vh;
+}
+
 </style>
