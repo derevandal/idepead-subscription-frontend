@@ -8,7 +8,10 @@
     "@nuxtjs/pwa": "latest",
     "@nuxtjs/webpackmonitor": "^0.0.3",
     "image-webpack-loader": "^3.4.2",
-    "nuxt": "latest"
+    "nib": "^1.1.2",
+    "nuxt": "latest",
+    "pug": "^2.0.0-rc.4",
+    "stylus": "^0.54.5"
   },
   "scripts": {
     "dev": "nuxt",
