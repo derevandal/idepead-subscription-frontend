@@ -1,6 +1,6 @@
-# idepead-subscription-frontend
+# IDEPead - Subscription's Front End
 
-> IDEPead - Subscription's Front end
+> This webapp is used to get subscripters for IDEPead's Courses
 
 ## Build Setup
 
