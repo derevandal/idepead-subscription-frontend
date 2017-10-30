@@ -97,8 +97,7 @@ module.exports = {
   // },
   modules: [
     ['@nuxtjs/pwa', { meta: false }],
-    '@nuxtjs/webpackmonitor',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/webpackmonitor'
   ]
 
 }
