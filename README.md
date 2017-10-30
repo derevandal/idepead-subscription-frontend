@@ -14,6 +14,7 @@ $ npm run dev
 
 # build for production and launch server
 $ npm run build
+# or npm run build-monitor for analize build
 $ npm start
 
 # generate static project
