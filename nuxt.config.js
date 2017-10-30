@@ -4,6 +4,11 @@ module.exports = {
   */
   build: {
     analyze: true,
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     extend (config, { isClient, dev }) {
       if (isClient) {
         config.devtool = 'eval-source-map'
@@ -23,7 +28,13 @@ module.exports = {
               }
             }
           ]
-        })
+        },
+          {
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/
+          })
       }
       return config
     }
@@ -42,7 +53,7 @@ module.exports = {
       { lang: 'pt-br' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700' }
+      { rel: 'stylesheet', href: 'https://unpkg.com/bulmaswatch/cosmo/bulmaswatch.min.css' }
     ],
     script: [
       { src: 'https://www.google.com/recaptcha/api.js?render=explicit', async: true, defer: true, body: true }
