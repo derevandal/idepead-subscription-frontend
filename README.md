@@ -29,6 +29,7 @@ $ npm run generate
 1. [Stylus](https://github.com/stylus/stylus)
 1. [nib](https://github.com/tj/nib)
 1. [Pug](https://github.com/pugjs/pug)
+1. [Buefy](https://github.com/rafaelpimpa/buefy)
 
 ## To add
 

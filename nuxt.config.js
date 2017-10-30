@@ -69,7 +69,7 @@ module.exports = {
     theme_color: '#3B8070'
   },
   /*
-  ** Modules
+  ** Router
   */
   // router: {
   //   scrollBehavior: (to, from, savedPosition) => {
@@ -95,10 +95,19 @@ module.exports = {
   //     }
   //   }
   // },
+  /*
+  ** Modules
+  */
   modules: [
     ['@nuxtjs/pwa', { meta: false }],
     '@nuxtjs/webpackmonitor',
     '@nuxtjs/bulma'
+  ],
+  /*
+  ** Plugins
+  */
+  plugins: [
+    '~plugins/buefy'
   ]
 
 }

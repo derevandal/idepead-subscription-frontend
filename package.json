@@ -8,6 +8,7 @@
     "@nuxtjs/bulma": "^1.0.3",
     "@nuxtjs/pwa": "latest",
     "@nuxtjs/webpackmonitor": "^0.0.3",
+    "buefy": "^0.5.4",
     "image-webpack-loader": "^3.4.2",
     "nib": "^1.1.2",
     "nuxt": "latest",
