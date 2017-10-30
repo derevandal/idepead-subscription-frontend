@@ -42,7 +42,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700' }
     ],
     script: [
-      { src: 'https://www.google.com/recaptcha/api.js?render=explicit', async: true, defer: true }
+      { src: 'https://www.google.com/recaptcha/api.js?render=explicit', async: true, defer: true, body: true }
     ]
   },
 
