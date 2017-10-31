@@ -23,3 +23,5 @@ static/sw.js
 static/workbox-sw*.*
 
 .monitor
+yarn.lock
+package-lock.json
