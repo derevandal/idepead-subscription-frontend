@@ -4,7 +4,7 @@ module.exports = {
   */
   build: {
     analyze: false,
-    publicPath: 'https://derevandal.github.io/idepead-subscription-frontend/',
+    publicPath: '/',
     extractCSS: true,
     postcss: {
       plugins: {
