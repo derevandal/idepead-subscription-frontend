@@ -26,8 +26,6 @@ $ npm run generate
 1. [@nuxtjs/pwa](https://github.com/nuxt-community/pwa-module)
 1. [@nuxtjs/webpackmonitor](https://github.com/nuxt-community/webpackmonitor-module)
 1. [@nuxtjs/bulma](https://github.com/nuxt-community/modules/tree/master/packages/bulma)
-1. [Stylus](https://github.com/stylus/stylus)
-1. [nib](https://github.com/tj/nib)
 1. [Pug](https://github.com/pugjs/pug)
 1. [Buefy](https://github.com/rafaelpimpa/buefy)
 
